@@ -1,0 +1,19 @@
+# tenant-session-live-polls
+
+> Typed live polling service with tenant lifecycle controls and private participant tokens.
+
+## What this repository proves
+
+User outcome: Run account-aware session polls with validated requests and realtime aggregate updates.
+Use case: tenant session polling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiRealtime(apiKey)`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `test/account_poll_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

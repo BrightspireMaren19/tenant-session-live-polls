@@ -1,0 +1,19 @@
+{
+  "name": "tenant-session-live-polls",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/poll_service.ts",
+    "demo": "node --experimental-strip-types src/run_session.ts",
+    "test": "node --experimental-strip-types --test test/account_poll_policy.test.ts",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
